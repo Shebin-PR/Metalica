@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:metalica/Screens/signupscreen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -11,6 +12,19 @@ class SplashScreen extends StatelessWidget {
         body: Stack(
           children: [
             Positioned(
+              left: 70,
+              top: 10,
+              child: Image.asset(
+                "assets/images/tt.png",
+              ),
+            ),
+            Positioned(
+              left: 50,
+              child: Image.asset(
+                "assets/images/tt.png",
+              ),
+            ),
+            Positioned(
               left: 20,
               top: 80,
               child: Image.asset(
@@ -18,7 +32,7 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              left: 20,
+              left: 240,
               top: 300,
               child: Image.asset(
                 "assets/images/tt.png",
@@ -49,7 +63,12 @@ class SplashScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                 ),
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (ctx) => const SignUpScreen()),
+                    );
+                  },
                   child: Text(
                     "Get Started",
                     style: TextStyle(
@@ -78,7 +97,12 @@ class SplashScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                 ),
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (ctx) => const SignUpScreen()),
+                    );
+                  },
                   child: Text(
                     "Login",
                     style: TextStyle(
