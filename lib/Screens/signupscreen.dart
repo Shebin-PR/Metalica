@@ -18,14 +18,14 @@ class SignUpScreen extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               decoration: const BoxDecoration(
                 color: Colors.white,
-                // gradient: LinearGradient(
-                //   begin: Alignment.topCenter,
-                //   end: Alignment.bottomCenter,
-                //   colors: [
-                //     Color(0xffee9ca7),
-                //     Color(0xffF4E2D8),
-                //   ],
-                // ),
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Color(0xffee9ca7),
+                    Color(0xffF4E2D8),
+                  ],
+                ),
               ),
             ),
 
