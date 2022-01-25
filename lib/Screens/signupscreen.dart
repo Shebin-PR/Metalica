@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:metalica/Screens/loginscreen.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -199,7 +200,14 @@ class SignUpScreen extends StatelessWidget {
                     ),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const LoginScreen(),
+                        ),
+                      );
+                    },
                     child: const Text(
                       "Login",
                       style: TextStyle(color: Colors.blue),
@@ -219,7 +227,7 @@ class SignUpScreen extends StatelessWidget {
             Positioned(
               bottom: 110,
               left: 80,
-              child: Container(
+              child: SizedBox(
                 width: 250,
                 child: ElevatedButton.icon(
                   style: ElevatedButton.styleFrom(
@@ -247,7 +255,7 @@ class SignUpScreen extends StatelessWidget {
             Positioned(
               bottom: 60,
               left: 80,
-              child: Container(
+              child: SizedBox(
                 width: 250,
                 child: ElevatedButton.icon(
                   style: ElevatedButton.styleFrom(
@@ -279,7 +287,11 @@ class SignUpScreen extends StatelessWidget {
                   "assets/images/google.png",
                 ),
               ),
-            )
+            ),
+
+            /// email signup
+            ///
+            ///
           ],
         ),
       ),

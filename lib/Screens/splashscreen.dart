@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:metalica/Screens/loginscreen.dart';
 import 'package:metalica/Screens/signupscreen.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -100,7 +101,7 @@ class SplashScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (ctx) => const SignUpScreen()),
+                      MaterialPageRoute(builder: (ctx) => const LoginScreen()),
                     );
                   },
                   child: Text(
